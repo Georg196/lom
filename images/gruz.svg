@@ -1,0 +1,18 @@
+<svg width="52.000000" height="52.000000" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip0_708">
+			<rect id="truck" rx="-0.500000" width="23.000000" height="23.000000" transform="translate(14.500000 14.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<circle id="Ellipse 66" cx="26.000000" cy="26.000000" r="26.000000" fill="#105720" fill-opacity="1.000000"/>
+	<rect id="truck" rx="-0.500000" width="23.000000" height="23.000000" transform="translate(14.500000 14.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip0_708)">
+		<path id="Vector" d="M30 17L30 30L15 30L15 17L30 17Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<path id="Vector" d="M34 22L37 25L37 30L30 30L30 22L34 22Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<path id="Vector" d="M19.5 35C18.11 35 17 33.88 17 32.5C17 31.11 18.11 30 19.5 30C20.88 30 22 31.11 22 32.5C22 33.88 20.88 35 19.5 35Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<path id="Vector" d="M32.5 35C31.11 35 30 33.88 30 32.5C30 31.11 31.11 30 32.5 30C33.88 30 35 31.11 35 32.5C35 33.88 33.88 35 32.5 35Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+	</g>
+</svg>
