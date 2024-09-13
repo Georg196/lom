@@ -1,0 +1,475 @@
+/* сброс стилей */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  font-size: 14px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+input,
+textarea,
+button,
+select,
+table,
+span {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: var(--font-text);
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* постоянные значения */
+
+:root {
+  --color-text: #1f1f1f;
+  --color-nav: #4c4c4c;
+  --color-fon: #f3f7f4;
+  --color-green: #105720;
+  --color-accent: #f95707;
+  --font-heading: 48px;
+  --font-title: 42px;
+  --font-special: 20px;
+  --font-text: 16px;
+}
+
+body {
+  width: 1296px;
+  margin: auto;
+  overflow-x: hidden;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: var(--font-heading);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: var(--font-title);
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: var(--font-special);
+}
+
+.flex {
+  display: flex;
+}
+
+.gap {
+  gap: 42px;
+}
+
+.row {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: 46px;
+  padding: 0 32px 0 32px;
+  color: var(--color-accent);
+  font-size: var(--font-text);
+  font-weight: 600;
+  border: 2px solid var(--color-accent);
+  border-radius: 100px;
+}
+
+/* <--- ---> */
+
+.contacts {
+  flex-direction: column;
+  color: var(--color-text);
+}
+
+.input-container {
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 215px;
+  height: 46px;
+  border-radius: 100px;
+  background-color: #fff7f3;
+  color: var(--color-accent);
+}
+
+.input-container input {
+  width: 135px;
+  background-color: #fff7f3;
+}
+
+.input-container input::placeholder {
+  color: var(--color-accent);
+}
+
+.input-container::before {
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: url(./images/search.svg);
+}
+
+.calc {
+  text-decoration: 1px underline !important;
+  font-weight: 600;
+  color: var(--color-green);
+}
+
+.social {
+  gap: 12px;
+}
+
+/* навигация */
+
+.navbar {
+  height: 67px;
+  margin: 16px -120px 0 -120px;
+  padding: 0 120px 0 120px;
+  text-transform: uppercase;
+  border-left: none;
+  border-top: 1px solid #e8e8e8;
+  border-right: none;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.navbar a {
+  color: var(--color-nav);
+}
+
+.navbar a:hover {
+  text-decoration: 2px underline !important;
+  text-underline-offset: 24px;
+  color: var(--color-accent);
+}
+
+/* главные банер */
+
+.mane {
+  height: 689px;
+  overflow: hidden;
+  margin: 0 -120px 0 -120px;
+  padding: 0 120px 0 120px;
+  background: var(--color-fon);
+}
+
+.mane__content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 52px;
+}
+
+h1 {
+  width: 500px;
+}
+
+h1 b {
+  font-size: var(--font-heading);
+  color: var(--color-green);
+}
+
+.tabs {
+  flex-wrap: wrap;
+  width: 500px;
+  gap: 12px;
+}
+
+.btn {
+  color: var(--color-fon);
+  background: var(--color-accent);
+}
+
+.video {
+  margin: 52px 0 0 30px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle a {
+  position: absolute;
+}
+
+.circle__animation {
+  animation-name: rotation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* Приемущества */
+
+.advantages {
+  gap: 24px;
+  margin: 60px 0 101px 0;
+}
+
+.advantages__container {
+  flex-direction: column;
+  width: 416px;
+  height: 152px;
+  border: #e8e8e8 1px solid;
+  border-radius: 12px;
+  padding: 20px 30px 20px 30px;
+  gap: 12px;
+}
+
+.advantages__container__title {
+  align-items: center;
+  gap: 12px;
+}
+
+/* о компании */
+
+.about {
+  justify-content: space-between;
+  border-left: none;
+  border-top: 1px solid var(--color-accent);
+  border-right: none;
+  border-bottom: 1px solid var(--color-accent);
+  margin-bottom: 101px;
+  padding: 44px 0 44px 0;
+}
+
+.about__text {
+  width: 746px;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* прайс металла */
+
+.metal {
+  justify-content: space-between;
+}
+
+.metal__category {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.metal__container__title {
+  width: 396px;
+  height: 72px;
+  border-radius: 12px;
+  align-items: center;
+  padding-left: 32px;
+  font-weight: 600;
+  color: var(--color-fon);
+  background: var(--color-green);
+}
+
+.metal__text {
+  width: 250px;
+}
+
+.metal__container {
+  width: 396px;
+  height: 72px;
+  border-radius: 12px;
+  align-items: center;
+  color: var(--color-text);
+  background: var(--color-fon);
+  gap: 20px;
+}
+
+.metal__container::after {
+  content: url(./images/Vector-str.svg);
+}
+
+.metal__container:hover {
+  cursor: pointer;
+  color: var(--color-fon);
+  background: var(--color-green);
+}
+
+.metal__container:hover::after {
+  content: url(./images/Vector-str-w.svg);
+}
+
+/* таблица металлов */
+
+.actual__prices {
+  flex-direction: column;
+  gap: 32px;
+}
+
+.actual__prices__title p {
+  font-size: 20px;
+  color: #4c4c4c;
+}
+
+.prices__title {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-metal::before {
+  margin-right: 10px;
+  content: url(./images/trending-up.svg);
+}
+
+.btn__container {
+  gap: 20px;
+}
+
+.table__prices {
+  width: 856px;
+  height: 771px;
+  overflow: hidden;
+  border: solid #e8e8e8;
+  border-radius: 12px;
+  border-spacing: 0;
+}
+
+.table__header {
+  width: 856px;
+  height: 67px;
+  color: #707070;
+  background: rgb(243, 247, 244);
+}
+
+.br-l {
+  border-radius: 0 0 0 12px;
+}
+
+.br-r {
+  border-radius: 0 0 12px 0;
+}
+
+.table__prices th:first-child {
+  text-align: left;
+  color: #105720;
+  padding-left: 32px;
+}
+
+.table__header th {
+  color: var(--color-nav) !important;
+  font-weight: 600 !important;
+}
+
+.table__prices th {
+  font-weight: 500;
+}
+
+.table__prices tr:hover {
+  background: var(--color-fon);
+}
+
+.table__prices th:hover {
+  text-decoration: underline;
+}
